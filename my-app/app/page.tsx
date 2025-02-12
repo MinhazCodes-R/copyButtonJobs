@@ -2,11 +2,8 @@
 import React, { useState } from 'react';
 
 export default function Home() {
-  const [copySuccess, setCopySuccess] = useState('');
 
   const textToCopy = "Hello, world!";
-
-
 
   return (
     <div>
@@ -205,8 +202,6 @@ export default function Home() {
     </div>
 
 
-
-      {copySuccess && <p>{copySuccess}</p>}
     </div>
   );
 }
