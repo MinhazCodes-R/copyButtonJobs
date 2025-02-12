@@ -6,15 +6,7 @@ export default function Home() {
 
   const textToCopy = "Hello, world!";
 
-  const handleCopyClick = async () => {
-    try {
-      await navigator.clipboard.writeText(textToCopy);
-      setCopySuccess('Copied successfully!');
-    } catch (error) {
-      setCopySuccess('Failed to copy!');
-      console.error('Error copying text: ', error);
-    }
-  };
+
 
   return (
     <div>
