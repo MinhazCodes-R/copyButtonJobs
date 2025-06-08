@@ -117,6 +117,14 @@ export default function Home() {
           Frontend Developer Details
         </button>
       </div>
+
+      {/* Password */}
+      <div style={{ height: '20px' }}></div>
+      <button style={{ height: '30px' }} onClick={async () => {
+        await navigator.clipboard.writeText("Iamsosocool_101");
+      }}>
+        password
+      </button>
     </div>
   );
 }
